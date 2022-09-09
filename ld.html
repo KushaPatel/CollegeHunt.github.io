@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>L D </title>
+
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Font-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu+Condensed&family=Ubuntu+Mono:ital@1&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <!--CSS-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700">-->
+    <link rel="stylesheet" href="file:///E:/fontawesome/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <!--JAVASCRIPT VESRION4-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!--fontawesome-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!--icon-->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
+
+    <style>
+        h1{
+            font-size: 80px;
+        }
+        h2{
+            font-size: 35px;
+        }
+        p{
+            font-size: 25px;
+        }
+        .gallery {
+            margin: 8px;
+            float: left;
+            width: 180px;
+        }
+        .gallery img {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .gallery img:hover{
+            transform: scale(1.05) ;
+        }
+        table {
+            border-collapse: collapse;
+            width: 40%;
+            color: black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        #info{
+            color: black;
+            background-color: white;
+        }
+        #course{
+            color: white;
+            background-color: #07096e;
+        }
+        #img{
+            color: black;
+            background-color: white;
+        }
+        #facility{
+            color: white;
+            background-color: #07096e;
+        }
+        #fees{
+            color: black;
+            background-color: white;
+        }
+        .padding{
+            padding: 30px;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+        /* The grid: Four equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 25%;
+            padding: 10px;
+        }
+        /* Style the images inside the grid */
+        .column img {
+            opacity: 0.8; 
+            cursor: pointer; 
+        }
+        .column img:hover {
+            opacity: 1;
+        }
+        /* Clear floats after the columns */
+        .row{
+            margin-left: 10px;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body style="background-color: #07096e;" class="mainback">
+    <!--Nav Bar-->
+	<nav class="fixnav" style="z-index:1000;">
+		<label class="logo"><img src="COLLEGEHUNTBLUE.png" alt="logo" width="100px" height="70px"></label>
+
+		<ul>
+            <li class="nav-item">
+                <a href="#info">Information</a>
+            </li>
+            <li class="nav-item">
+                <a href="#course">Courses</a>
+            </li>
+            <li class="nav-item">
+                <a href="#img">Images</a>
+            </li>
+            <li class="nav-item">
+                <a href="#facility">Facilitys</a>
+            </li>
+            <li class="nav-item">
+                <a href="#fees">Fees</a>
+            </li>
+		   <li>
+			  <a href="#">Top University
+			  <i class=" fa-caret"></i>
+			  </a>
+			  <ul>
+				<li><a href="#">Nirma University</a></li>
+				<li><a href="#">PDE University</a></li>
+				<li><a href="#">Indus University</a></li>
+				<li><a href="#">DA-IICT</a></li>
+				<li><a href="#">Ganpat University</a></li>
+			  </ul>
+		   </li>
+		   <li>
+			  <a href="#">GOV. College
+			  <i class=" fa-caret"></i>
+			  </a>
+			  <ul>
+				 <li><a href="#">L.D. College</a></li>
+				 <li><a href="#">Vishwakarma Government College</a></li>
+				 <li><a href="#">MS University</a></li>
+				 <li><a href="#">GOV. Engineering College</a></li>
+				 <li><a href="#">Vishwakarma Government College</a></li>
+			  </ul>
+		   </li>
+		   <li>
+			<a href="#">Exams
+			<i class=" fa-caret"></i>
+			</a>
+			<ul>
+			   <li><a href="#">GUJCET</a></li>
+			   <li><a href="#">JEE main</a></li>
+			   <li><a href="#">JEE advance</a></li>
+			</ul>
+		 </li>
+		 <li><a class="active" href="index.html">Home</a></li>
+		</ul>
+	 </nav>
+
+     <br>
+     <h1>L. D. College</h1>
+     <br><br><br>
+     <center><img src="ld.jpg" alt="LD college" width="550px" height="300px" style="border: 2px solid #ddd; border-radius: 10px; padding: 7px;"></center>
+     <br><br><br><br><br><br><br><br><br>
+
+     <!--Information-->
+
+     <section id="info">
+        <br><br><br><br>
+        <h2><b>INFORMATION</b></h2>
+
+        <p>
+            <div class="padding">
+                L. D. College of Engineering endearingly known as L.D.C.E is Ahmedabad’s premier engineering college situated at the city’s heart and surrounded by elite organization like PRL, ATIRA, ISRO, IIM and CEPT. Starting in 1948 to impart quality higher education in various fields of engineering, it has seen unprecedented growth.<br><br>
+                It is affiliated with Gujarat Technological University & administrated by Department of Technical Education, Government of Gujarat.<br><br>
+                The institute was established in 1948 with a donation of Rs. 25 lacs and 31.2 hectares (77 acres) of land by the textile magnate Kasturbhai Lalbhai, who named the college after his father, Lalbhai Dalpatbhai. The institute started with 75 students in Civil, Mechanical and Electrical undergraduate programs, and was affiliated to the Bombay University. From 1950 until the formation of the Gujarat Technological University, it was affiliated to the Gujarat University.Currently Dr. Rajul .K. Gajjar former Incharge Vice Chancellor, Principal of Vishwakarma Government College of Engineering acting as Principal Of College.<br><br>
+                <b>ADDRESS</b>: LALBHAI DALPATBHAI COLLEGE OF ENGINEERING, 120, Circular Road, University Area, Ahmedabad, Gujarat 380015<br>
+                <b>CONTECT NO.</b>: 91-79-26302887<br>
+                <b>E-MAIL</b>: ldce_ciiilp yahoo.com<br>
+                <b>OFFICIAL WEBSITE</b>: http://www.ldceahd.org/
+            </div>
+        </p>
+     </section>
+
+     <!--Course-->
+
+     <section id="course">
+        <br><br><br><br>
+        <h2 style="color: white;"><b>COURSES</b></h2>
+        <p>
+            Cousres And Site of that cousre...<br>
+            <ul>
+                <li>Automobile Engineering  ...120</li>
+                <li>Biomedical Engineering  ...7</li>
+                <li>Chemical Engineering    ...60</li>
+                <li>Civil Engineering   ...120</li>
+                <li>Computer Engineering    ...120</li>
+                <li>Electrical Engineering  ...120</li>
+                <li>Electronics & Communication Engineering	...120</li>
+                <li>Environment Engineering ...60</li>
+                <li>Information Technology	...120</li>
+                <li>Instrumentation & Control Engineering	...60</li>
+                <li>Mechanical Engineering	...120</li>
+                <li>Plastic Technology	...30</li>
+                <li>Rubber Technology   ...30</li>
+                <li>Textile Technology	...60</li>
+            </ul>
+        </p>
+     </section>
+
+     <!--Image-->
+
+     <section id="img">
+        <br><br><br><br>
+        <h2><b>IMAGES</b></h2><br><br>
+        <p>
+            <div class="row">
+                <div class="column">
+                  <img src="ld.jpg" alt="ld" style="width:320px; height: 190px;" >
+                </div>
+                <div class="column">
+                  <img src="ld1.jpg" alt="ld1" style="width:320px; height: 190px;" >
+                </div>
+                <div class="column">
+                  <img src="ld2.jpg" alt="ld2" style="width:320px; height: 190px;" >
+                </div>
+                <div class="column">
+                  <img src="ld3.jpg" alt="ld3" style="width:320px; height: 190px;" >
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                  <img src="ld4.jpg" alt="ld4" style="width:320px; height: 190px;" >
+                </div>
+                <div class="column">
+                  <img src="ld5.jpg" alt="ld5" style="width:320px; height: 190px;" >
+                </div>
+                <div class="column">
+                  <img src="ld6.jpg" alt="ld6" style="width:320px; height: 190px;" >
+                </div>
+                <div class="column">
+                  <img src="ld7.jpg" alt="ld7" style="width:320px; height: 190px;" >
+                </div>
+              </div>
+        </p>
+        
+     </section>
+
+     <!--Facility-->
+
+     <section id="facility">
+        <br><br><br><br>
+        <h2 style="color: white;"><b>FACILITYS</b></h2>
+        <br>
+
+        <!--<p>
+            <ul>
+                <li>1.Laboratories</li>
+                <li>2.Workshop</li>
+                <li>3.Sports</li>
+                <ul>
+                    <li>i.Cricket</li>
+                    <li>ii.Table Tennis</li>
+                    <li>iii.Badminton</li>
+                    <li>iv.Kabbdi</li>
+                    <li>v.Football</li>
+                    <li>vi.Vollyball</li>
+                </ul>
+                <li>4.Library</li>
+                <li>5.Training and placement cell</li>
+                <li>6.Hostel</li>
+                <ul>
+                    <li>i.Mess</li>
+                    <li>ii.TV room</li>
+                    <li>iii.GYM</li>
+                </ul>
+                <li>7.Canteen</li>
+            </ul>
+        </p>-->
+        <p>
+            <br>
+            <b style="font-size: 25px;">Available Basic Facilities In The Campus</b><br>
+            <table style="width: 70%; text-align: left; font-size: 20px; color: white;">
+                <tr>
+                    <td><i class='fas fa-laptop'></i>   Comp Labs</td>
+                    <td><i class='fas fa-futbol'></i>   Sports</td>
+                    <td><i class='fas fa-bicycle'></i>  Gym</td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><i class='fas fa-plus-square'></i>  Medical</td>
+                    <td><i class="fa fa-coffee"></i>    Cafeteria</td>
+                    <td><i class='fas fa-flask'></i>    Laboratory</td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-book"></i>  Library</td>
+                    <td><i class='fas fa-volume-up'></i>    Auditorium</td>
+                    <td><i class='fas fa-bed'></i>  Hostel</td>
+                </tr>
+            </table>
+        </p>
+     </section>
+
+     <!--Fees-->
+
+     <section id="fees">
+        <br><br><br><br>
+        <h2><b>FEES</b></h2><br><br>
+        <table border="2px" >
+            <tr>
+                <th style=" border-bottom: 1px solid #ddd;">B.E.</th>
+                <td style=" border-bottom: 1px solid #ddd;">1st year <br> 2,860</td>
+            </tr>
+            <tr>
+                <td style=" border-bottom: 1px solid #ddd;">Duration<br>4 Years</td>
+                <td style=" border-bottom: 1px solid #ddd;">Exams accepted<br>10+2 with 45% + GUJCET</td>
+            </tr>
+        </table><br><br>
+        <table border="2px" >
+            <tr>
+                <th style=" border-bottom: 1px solid #ddd;">M.E.</th>
+                <td style=" border-bottom: 1px solid #ddd;">1st year <br> 5,730</td>
+            </tr>
+            <tr>
+                <td style=" border-bottom: 1px solid #ddd;">Duration<br>4 Years</td>
+                <td style=" border-bottom: 1px solid #ddd;">Exams accepted<br>Graduate</td>
+            </tr>
+        </table><br><br> 
+        <table border="2px" >
+            <tr>
+                <th style=" border-bottom: 1px solid #ddd;">M.Tech</th>
+                <td style=" border-bottom: 1px solid #ddd;">1st year <br> 5,730</td>
+            </tr>
+            <tr>
+                <td style=" border-bottom: 1px solid #ddd;">Duration<br>4 Years</td>
+                <td style=" border-bottom: 1px solid #ddd;">Exams accepted<br>Pass in Graduate + GATE</td>
+            </tr>
+        </table> 
+     </section>
+</body>
